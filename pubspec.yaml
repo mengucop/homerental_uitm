@@ -1,0 +1,65 @@
+name: homerental_uitm
+description: A new Flutter project.
+
+publish_to: 'none' # This prevents publishing to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI
+  cupertino_icons: ^1.0.8
+
+  # ✅ Firebase Packages
+  firebase_core: ^2.30.0
+  firebase_auth: ^4.17.8
+  firebase_database: ^10.4.9
+  firebase_storage: ^11.6.9
+  google_maps_flutter: ^2.6.1
+  image_picker: ^1.0.7
+  geolocator: ^10.1.0
+  permission_handler: ^11.3.1
+  cloud_firestore: ^4.14.0
+  firebase_app_check: ^0.2.1+6
+  cached_network_image: ^3.3.1
+  url_launcher: ^6.2.5
+  shared_preferences: ^2.2.2
+  provider: ^6.1.2
+  firebase_messaging: ^14.7.0
+  intl: ^0.18.1
+  fl_chart: ^0.64.0
+  pdf: ^3.10.4
+  path_provider: ^2.1.2
+  open_file: ^3.3.2
+  flutter_launcher_icons: ^0.14.4
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_native_splash: ^2.4.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.png
+    - assets/app_icon.png
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/logo.png
+  branding: assets/logo.png
+  android_gravity: center
+  ios_content_mode: center
+  fullscreen: true
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.png"  # Replace with your actual path
